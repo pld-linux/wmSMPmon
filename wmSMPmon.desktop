@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=wmSMPmon
 Comment=System resources monitor for SMP machines
-Comment[pl]=Monitor zasobów systemowych dla maszyn SMP
+Comment[pl]=Monitor zasobÃ³w systemowych dla maszyn SMP
 Exec=wmSMPmon
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
