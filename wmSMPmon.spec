@@ -5,6 +5,7 @@ Version:	2.1
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://goupil.linuxfr.org/creations/archives/arch/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
@@ -19,22 +20,23 @@ wmSMPmon is an WindowMaker applet for monitoring memory, swap and CPUs
 of SMP systems.
 
 %description -l pl
-wmSMPmon jest apletem dla WindowMakera monitoruj±cym obci±¿enie procesorów,
-wykorzystanie pamiêci i partycji wymiany w systemach wieloprocesorowych.
+wmSMPmon jest apletem dla WindowMakera monitoruj±cym obci±¿enie
+procesorów, wykorzystanie pamiêci i partycji wymiany w systemach
+wieloprocesorowych.
 
 %prep
 %setup -q -n %{name}-2.x
 
 %build
 %{__make} -C %{name} \
-        CFLAGS="$RPM_OPT_FLAGS -Wall"
+        CFLAGS="%{rpmcflags} -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets}
 
-install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-install %{SOURCE1} 	   $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
+install %{SOURCE1}	$RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf GREETINGS LISEZ-MOI
 
