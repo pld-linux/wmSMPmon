@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://goupilfr.org/arch/%{name}-%{version}.tar.gz
+# Source0-md5:	1c4c1729f87082002c2f196a96b9e7d1
 Source1:	%{name}.desktop
 URL:		http://goupilfr.org/?soft=wmsmpmon
 BuildRequires:	XFree86-devel
