@@ -27,7 +27,7 @@ wieloprocesorowych.
 
 %build
 %{__make} -C %{name} \
-        CFLAGS="%{rpmcflags} -Wall"
+	CFLAGS="%{rpmcflags} -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
