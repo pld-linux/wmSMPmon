@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=wmSMPmon
+Name=WmSMPmon
 Comment=System resources monitor for SMP machines
 Comment[pl]=Monitor zasobów systemowych dla maszyn SMP
 Exec=wmSMPmon
