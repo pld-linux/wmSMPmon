@@ -11,10 +11,9 @@ Source1:	%{name}.desktop
 BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
 ExclusiveArch:	%{ix86}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 wmSMPmon is an WindowMaker applet for monitoring memory, swap and CPUs
