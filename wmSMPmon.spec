@@ -9,7 +9,6 @@ Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://goupil.linuxfr.org/creations/archives/arch/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 BuildRequires:	XFree86-devel
-BuildRequires:	xpm-devel
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
