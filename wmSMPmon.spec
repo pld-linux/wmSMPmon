@@ -1,8 +1,8 @@
 Summary:	WindowMaker memory/swap/CPUs monitor of SMP systems
 Summary(pl):	Aplet monitoruj±cy zasoby systemowe maszyn SMP
 Name:		wmSMPmon
-Version:	2.1
-Release:	2
+Version:	2.2
+Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
