@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=wmSMPmon
+Comment=System resources monitor for SMP machines
+Comment[pl]=Monitor zasobów systemowych dla maszyn SMP
+Exec=wmSMPmon
+Terminal=0
+Type=Application
