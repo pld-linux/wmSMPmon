@@ -27,7 +27,7 @@ wykorzystanie pamiêci i partycji wymiany w systemach wieloprocesorowych.
 %setup -q -n %{name}-2.x
 
 %build
-make -C %{name} \
+%{__make} -C %{name} \
         CFLAGS="$RPM_OPT_FLAGS -Wall"
 
 %install
