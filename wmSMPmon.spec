@@ -12,7 +12,6 @@ URL:		http://goupilfr.org/?soft=wmsmpmon
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
 
 %description
 wmSMPmon is an WindowMaker applet for monitoring memory, swap and CPUs
