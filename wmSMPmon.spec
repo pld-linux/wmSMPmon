@@ -2,14 +2,13 @@ Summary:	WindowMaker memory/swap/CPUs monitor of SMP systems
 Summary(pl):	Aplet monitoruj±cy zasoby systemowe maszyn SMP
 Name:		wmSMPmon
 Version:	2.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://goupilfr.org/arch/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://goupilfr.org/?soft=wmsmpmon
 BuildRequires:	XFree86-devel
-ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
@@ -37,14 +36,12 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets}
 install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 #install %{SOURCE1}	$RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-gzip -9nf GREETINGS LISEZ-MOI
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc GREETINGS LISEZ-MOI
 %attr(755,root,root) %{_bindir}/%{name}
 
 #%{_applnkdir}/DockApplets/%{name}.desktop
