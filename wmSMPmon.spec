@@ -1,5 +1,5 @@
 Summary:	WindowMaker memory/swap/CPUs monitor of SMP systems
-Summary(pl.UTF-8):   Aplet monitorujący zasoby systemowe maszyn SMP
+Summary(pl.UTF-8):	Aplet monitorujący zasoby systemowe maszyn SMP
 Name:		wmSMPmon
 Version:	2.2
 Release:	2
