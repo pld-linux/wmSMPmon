@@ -1,5 +1,5 @@
 Summary:	WindowMaker memory/swap/CPUs monitor of SMP systems
-Summary(pl):	Aplet monitoruj±cy zasoby systemowe maszyn SMP
+Summary(pl.UTF-8):   Aplet monitorujÄ…cy zasoby systemowe maszyn SMP
 Name:		wmSMPmon
 Version:	2.2
 Release:	2
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 wmSMPmon is an WindowMaker applet for monitoring memory, swap and CPUs
 of SMP systems.
 
-%description -l pl
-wmSMPmon jest apletem dla WindowMakera monitoruj±cym obci±¿enie
-procesorów, wykorzystanie pamiêci i partycji wymiany w systemach
+%description -l pl.UTF-8
+wmSMPmon jest apletem dla WindowMakera monitorujÄ…cym obciÄ…Å¼enie
+procesorÃ³w, wykorzystanie pamiÄ™ci i partycji wymiany w systemach
 wieloprocesorowych.
 
 %prep
